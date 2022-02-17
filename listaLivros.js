@@ -18,4 +18,4 @@ const livros = [
 ]
 exports.precosLivro = livros
 
-console.log( livros[-1])
+console.log( livros[0])
