@@ -1,7 +1,7 @@
 // exporta recursos
 
 exports.livroMaisCaro = function(livros) {
-    maisBarato =0;
+    let maisBarato =0;
     for (let atual = 0; atual < livros.length; atual++) {
         if (livros[atual].preco > livros[maisBarato].preco) {
             maisBarato = atual
@@ -12,7 +12,7 @@ exports.livroMaisCaro = function(livros) {
 }
 
 exports.livroMaisBarato = function(livros) {
-    maisBarato =0;
+    let maisBarato =0;
     for (let atual = 0; atual < livros.length; atual++) {
         if (livros[atual].preco < livros[maisBarato].preco) {
             maisBarato = atual
@@ -21,3 +21,14 @@ exports.livroMaisBarato = function(livros) {
     return console.log(`O livro mais barato custa ${livros[maisBarato].preco} e o título é
  ${livros[maisBarato].titulo}.`)
 }
+
+ function menorValor(arrProdutos, posicaoInicial=0) {
+    let maisBarato =posicaoInicial;
+    for (let atual = 0; atual < arrProdutos.length; atual++) {
+        if (arrProdutos[atual].preco > arrProdutos[maisBarato].preco) {
+            maisBarato = atual
+        }
+    }
+    return maisBarato;
+ }
+module.exports.menorValor = menorValor;
