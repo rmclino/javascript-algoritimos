@@ -1,4 +1,4 @@
-exports.precosLivro = [
+const livros = [
     {
         titulo: "JavaScript",
         preco: 25
@@ -16,6 +16,6 @@ exports.precosLivro = [
         preco: 40
     }
 ]
+exports.precosLivro = livros
 
-
-//module.exports = precosLivros
+console.log( livros[-1])
