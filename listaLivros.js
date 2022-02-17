@@ -13,7 +13,7 @@ const livros = [
     },
     {
         titulo: "Python",
-        preco: 40
+        preco: 10
     }
 ]
 exports.precosLivro = livros
